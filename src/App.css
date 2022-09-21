@@ -10,7 +10,8 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
+    -webkit-animation: App-logo-spin infinite 20s linear;
+}
 }
 
 .App-header {
@@ -35,4 +36,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.loadCountries{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
+  padding: 20px;
+  background: #e5e7ea;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.displayCountries{
+  border: 3px solid white;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 9px;
+
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.displayCountries img{
+  width: 200px;
+  height: 100px;
 }
